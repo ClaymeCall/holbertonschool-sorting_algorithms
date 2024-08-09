@@ -1,7 +1,7 @@
 #ifndef SORT_H
 #define SORT_H
 
-#include <stddef.h>  // For size_t
+#include <stddef.h>
 
 /* Data structure for doubly linked list */
 typedef struct listint_s
