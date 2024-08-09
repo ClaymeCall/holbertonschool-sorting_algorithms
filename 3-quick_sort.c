@@ -19,7 +19,7 @@ void swap(int *a, int *b)
  * @low: The starting index of the partition
  * @high: The ending index of the partition
  * @size: Total size of the array (for printing)
- * 
+ *
  * Return: The index of the pivot
  */
 int partition(int *array, int low, int high, size_t size)
@@ -45,7 +45,7 @@ int partition(int *array, int low, int high, size_t size)
 		swap(&array[i], &array[high]);
 		print_array(array, size);
 	}
-	return i;
+	return (i);
 }
 
 /**
@@ -57,9 +57,12 @@ int partition(int *array, int low, int high, size_t size)
  */
 void quick_sort_recursive(int *array, int low, int high, size_t size)
 {
+	int pivot_index;
+
 	if (low < high)
 	{
-		int pivot_index = partition(array, low, high, size);
+		pivot_index = partition(array, low, high, size);
+
 		quick_sort_recursive(array, low, pivot_index - 1, size);
 		quick_sort_recursive(array, pivot_index + 1, high, size);
 	}

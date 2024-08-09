@@ -39,7 +39,7 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *curr = (*list)->next, *key, *prev_node;
 
-	if(!list || !(*list))
+	if (!list || !(*list))
 		return;
 
 	while (curr)
