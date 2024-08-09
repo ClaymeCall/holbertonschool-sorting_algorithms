@@ -3,7 +3,7 @@
 
 #include <stddef.h>
 
-/* Data structure for doubly linked list */
+/* Structures */
 typedef struct listint_s
 {
     const int n;
@@ -11,16 +11,12 @@ typedef struct listint_s
     struct listint_s *next;
 } listint_t;
 
-/* Function prototypes for array sorting algorithms */
-void bubble_sort(int *array, size_t size);
-void selection_sort(int *array, size_t size);
-void quick_sort(int *array, size_t size);
-
-/* Function prototypes for list sorting algorithm */
-void insertion_sort_list(listint_t **list);
-
-/* Function prototypes for print functions */
+/* Prototypes */
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
+void bubble_sort(int *array, size_t size);
+void insertion_sort_list(listint_t **list);
+void selection_sort(int *array, size_t size);
+void quick_sort(int *array, size_t size);
 
 #endif /* SORT_H */
